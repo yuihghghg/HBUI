@@ -13,7 +13,7 @@ local OrionLib = {
 	Themes = {
 		Default = {
 		Main = Color3.fromRGB(255, 255, 0),
-			Second = Color3.fromRGB(255, 255, 255),
+			Second = Color3.fromRGB(255, 255, 0),
 			Stroke = Color3.fromRGB(100, 150, 255),
 			Divider = Color3.fromRGB(110, 150, 255),
 			Text = Color3.fromRGB(110, 160, 255),
@@ -303,7 +303,7 @@ end)
 
 CreateElement("RoundFrame", function(Color, Scale, Offset)
 	local Frame = Create("Frame", {
-		BackgroundColor3 = Color or Color3.fromRGB(255, 255, 255),
+		BackgroundColor3 = Color or Color3.fromRGB(255, 255, 0),
 		BorderSizePixel = 0
 	}, {
 		Create("UICorner", {
@@ -527,7 +527,7 @@ function OrionLib:MakeWindow(WindowConfig)
 		Size = UDim2.new(1, 0, 0, 50)
 	})
 
-	local WindowStuff = AddThemeObject(SetChildren(SetProps(MakeElement("RoundFrame", Color3.fromRGB(255, 255, 255), 0, 10), {
+	local WindowStuff = AddThemeObject(SetChildren(SetProps(MakeElement("RoundFrame", Color3.fromRGB(255, 255, 0), 0, 10), {
 		Size = UDim2.new(0, 150, 1, -50),
 		Position = UDim2.new(0, 0, 0, 50)
 	}), {
